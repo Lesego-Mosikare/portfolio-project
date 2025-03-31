@@ -78,7 +78,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background: rgb(128, 128, 128, 0.3);
-    color: #FF4655;
+    color: rgb(255, 51, 66);
     padding: 0.5rem 1rem;
     border-radius: 5px;
     border-bottom:#FF4655 3px solid;
@@ -100,7 +100,7 @@ button {
 
 /* Button Hover Effect */
 button:hover {
-    color: #6C7A89;
+    color: #ffffff;
     border-radius: 12px;
     border: none;
     padding: 0.5rem 1rem;
