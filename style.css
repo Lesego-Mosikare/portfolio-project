@@ -1,0 +1,110 @@
+/* This is a CSS file for styling a web page. It includes styles for the body, headings, paragraphs, and links. It also imports a Google font for use in the page. */
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #0A192F;
+    color: #333;
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.75rem;
+}
+
+header .logo {
+    width: 75px;
+    height: 75px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #1A2A3D;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    background: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: .08rem;
+    transition: color 1s ease;
+}
+
+nav ul li a:hover {
+    background: rgb(128, 128, 128, 0.3);
+    color: #FF4655;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border-bottom:#FF4655 3px solid;
+}
+
+button {
+    background: linear-gradient(135deg, rgb(255, 51, 66) 0%, rgb(255, 48, 64) 0.01%, rgb(255, 125, 102) 100%);
+    color: #000000;
+    border-radius: 12px;
+    text-transform: uppercase;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.08rem;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    color: #6C7A89;
+    border-radius: 12px;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+
+
