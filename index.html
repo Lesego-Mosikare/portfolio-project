@@ -4,22 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Lesego Mosikare</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <img src="images/Lesego Mosikare Logo.png" alt="Portfolio Logo" class="logo">
-            <ul>
-                <li id="Home"><a href="">Home</a></li>
-                <li id="About"><a href="">About</a></li>
-                <li id="Skills"><a href="">Skills</a></li>
-                <li id="Projects"><a href="">Projects</a></li>
-                <li id="Contact"><a href="">Contact</a></li>
+            <button class="navbar-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="navbar-menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
-            <button>Contact</button>
+            <button class="contact-btn">Contacts</button>
         </nav>
     </header>
+    <main>
+        <section id="Home" class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Lesego Mosikare, a passionate web developer.</p>
+        </section>
+        <section id="About" class="about">
+            <h2>About Me</h2>
+            <div class="about-me">
+                <div class="profile-picture">
+                    <img src="images/Lesego Mosikare Logo.png" alt="Lesego Mosikare">
+                </div>
+                <div>
+                    <p>Hi, I'm Lesego Mosikare, an aspiring web developer passionate about building interactive and user-friendly websites. I'm currently honing my skills through the Power Learn Project (PLP), where I'm learning the fundamentals of programming and software development.</p>
+                    <p>My goal is to excel in PLP, earn my certification, and take on real-life coding challenges that will help me grow as a developer. I enjoy problem-solving, creating dynamic web experiences, and continuously learning new technologies to stay ahead in the ever-evolving world of web development.</p>
+                </div>
+            </div>
+        </section>
+        <section id="Skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>MySQL</li>
+            </ul>
+        </section>
+        <section id="Projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gym App">
+                    <div class="card-content">
+                        <h5>Project 1</h5>
+                        <p>A web application that allows users to track their fitness goals.</p>
+                        <a href="#" class="button">View Project</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/95425/pexels-photo-95425.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Friuts Shop">
+                    <div class="card-content">
+                        <h5>Project 2</h5>
+                        <p>A responsive website for a local business.</p>
+                        <a href="#" class="button">View Project</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-Commerce Platform">
+                    <div class="card-content">
+                        <h5>Project 3</h5>
+                        <p>An e-commerce platform for selling products online.</p>
+                        <a href="#" class="button">View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </section>
+        <section id="Contact" class="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Lesego Mosikare. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="github"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
     <script src="main.js"></script>
 </body>
 </html>
